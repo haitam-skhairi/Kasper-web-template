@@ -1,7 +1,7 @@
 # Kasper | Template_Two_Html_Css
 This is Template_Two with CSS and HTML
 ## Demo
-https://haitam-skhairi.github.io/Kasper_Template_One_HTML_CSS/
+https://haitam-skhairi.github.io/Kasper_Template_Two_Html_Css/
 ### Source
 I do this Template just with Html and CSS at this moment, but I can develop him in the future with JavaScript 
 This Design from the website: <br>
