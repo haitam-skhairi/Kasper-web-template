@@ -1,5 +1,5 @@
-# Kasper | Template_One_Html_Css
-This is Template_One with CSS and HTML
+# Kasper | Template_Two_Html_Css
+This is Template_Two with CSS and HTML
 ## Demo
 https://haitam-skhairi.github.io/Kasper_Template_One_HTML_CSS/
 ### Source
