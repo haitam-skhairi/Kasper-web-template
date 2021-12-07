@@ -1,4 +1,4 @@
-# Kasper | Template_Two_Html_Css
+# Kasper | Template_Two_Html_and_Css
 This is Template_Two with CSS and HTML<br>
 CSS : Grid - Flex - Media Query - Variables - Responsive Design ...
 ## Demo
