@@ -1,5 +1,6 @@
 # Kasper | Template_Two_Html_Css
-This is Template_Two with CSS and HTML
+This is Template_Two with CSS and HTML<br>
+CSS : Grid - Flex - Media Query - Variables - Responsive Design ...
 ## Demo
 https://haitam-skhairi.github.io/Kasper_Template_Two_Html_Css/
 ### Source
