@@ -1016,7 +1016,8 @@ body {
 .footer p:last-of-type {
   margin-top: 60px;
 }
-.footer p:last-of-type span {
+.footer p:last-of-type a {
+  text-decoration: none;
   font-weight: bold;
   color: var(--main-color);
 }
