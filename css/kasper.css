@@ -13,9 +13,10 @@ html {
 .scrolling-button {
   width: 30px;
   height: 30px;
+  padding: 10px;
   background-color: #0c3c4b;
-  color: white;
-  border: none;
+  color: #ececec;
+  border: 2px solid #ececec;
   border-radius: 4px;
   position: fixed;
   z-index: 3;
@@ -624,31 +625,29 @@ body {
   margin-bottom: 60px;
 }
 /* >>>>> Testimonials <<<<<<< */
-.our-skills .testimonials .content {
+.our-skills .testimonials .box {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
 }
-.our-skills .testimonials .content img {
+.our-skills .testimonials .box img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 30px;
 }
 @media (max-width: 768px) {
-  .our-skills .testimonials .content {
+  .our-skills .testimonials .box {
     flex-direction: column;
     align-items: center;
   }
-  .our-skills .testimonials .content img {
-  }
 }
-.our-skills .testimonials .content .text {
+.our-skills .testimonials .box .text {
   padding: 20px;
   line-height: 2;
   border-bottom: 1px solid #ccc;
 }
-.our-skills .testimonials .content .text p {
+.our-skills .testimonials .box .text p {
   font-size: 14px;
   color: #777;
   text-align: right;
@@ -688,14 +687,15 @@ body {
   position: relative;
   height: 100%;
   background-color: var(--main-color);
+  transition: 1.5s;
 }
 .our-skills .skills .prog-holder span::before {
-  content: attr(data-progress);
+  content: attr(data-width);
   width: 30px;
   height: 20px;
   padding: 3px 6px;
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
   position: absolute;
   top: -40px;
   right: -20px;
@@ -708,10 +708,9 @@ body {
   right: -6px;
   width: 0;
   height: 0;
-  border: 7px solid #000000;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
 }
 /* End Our-Skills */
 
@@ -755,47 +754,47 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
-.pricing .plans .plan {
+.pricing .plans .box {
   background-color: #fcfcfc;
   margin-bottom: 5px;
 }
-.pricing .plans .plan .head {
+.pricing .plans .box .head {
   padding: 40px 20px;
   border-top: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
-.pricing .plans .plan .head h3 {
+.pricing .plans .box .head h3 {
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.pricing .plans .plan .head span {
+.pricing .plans .box .head .num {
   font-size: 60px;
   position: relative;
   font-weight: bold;
 }
-.pricing .plans .plan .head span::before {
+.pricing .plans .box .head span::before {
   content: "$";
   position: absolute;
   top: 0;
   left: -10px;
   font-size: 20px;
 }
-.pricing .plans .plan .head span::after {
+.pricing .plans .box .head span::after {
   content: "/Mo";
   font-size: 20px;
   margin-left: 10px;
 }
-.pricing .plans .plan ul {
+.pricing .plans .box ul {
   border-bottom: 1px solid var(--main-color);
 }
-.pricing .plans .plan ul li {
+.pricing .plans .box ul li {
   padding: 20px;
   font-size: 16px;
   text-transform: capitalize;
   position: relative;
 }
-.pricing .plans .plan ul li:not(:last-child)::after {
+.pricing .plans .box ul li:not(:last-child)::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -805,7 +804,7 @@ body {
   width: 140px;
   background-color: var(--main-color);
 }
-.pricing .plans .plan .foot a {
+.pricing .plans .box .foot a {
   display: block;
   width: fit-content;
   padding: 20px;
@@ -902,31 +901,32 @@ body {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
 }
-.contact .container .content {
+.contact .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  .contact .container .content {
+  .contact .content {
     flex-direction: column-reverse;
   }
 }
 .contact form {
   flex-basis: 70%;
 }
-.contact .main-input {
+.contact .input {
   display: block;
   width: 100%;
   margin-bottom: 30px;
   padding: 20px;
   border: 1px solid #ccc;
 }
-.contact .main-input:focus {
+.contact .input:focus {
   outline: none;
 }
-.contact textarea.main-input {
+.contact textarea.input {
   height: 200px;
+  resize: none;
 }
 .contact input[type="submit"] {
   display: flex;
@@ -966,7 +966,7 @@ body {
     margin-top: 30px;
   }
 }
-.contact .info .phone {
+.contact .info span {
   display: block;
   color: #777;
   margin-bottom: 10px;
