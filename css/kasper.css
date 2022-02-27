@@ -419,8 +419,9 @@ body {
   font-size: 16px;
   text-transform: capitalize;
   padding: 10px;
+  cursor: pointer;
 }
-.portfolio .shuffle li.action {
+.portfolio .shuffle .active {
   color: #ffffff;
   background-color: var(--main-color);
 }
@@ -428,6 +429,7 @@ body {
 .portfolio .imgs-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .portfolio .imgs-container .box {
   flex-basis: 100%;
@@ -444,6 +446,7 @@ body {
 }
 .portfolio .imgs-container .box img {
   width: 100%;
+  height: 100%;
   transition: 0.3s;
 }
 .portfolio .imgs-container .box:hover img {

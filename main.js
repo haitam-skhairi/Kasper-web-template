@@ -16,6 +16,31 @@ btn.addEventListener("click", () => {
   });
 });
 
+// Section Portfolio
+let shffelLis = document.querySelectorAll(".portfolio .shuffle li");
+let portfolioBoxs = document.querySelectorAll(
+  ".portfolio .imgs-container .box"
+);
+
+shffelLis.forEach((li) => {
+  li.addEventListener("click", () => {
+    shffelLis.forEach((el) => {
+      el.classList.remove("active");
+      li.classList.add("active");
+    });
+  });
+});
+shffelLis.forEach((li) => {
+  li.addEventListener("click", () => {
+    portfolioBoxs.forEach((box) => {
+      box.style.display = "none";
+      document.querySelectorAll(li.dataset.cat).forEach((el) => {
+        el.style.display = "block";
+      });
+    });
+  });
+});
+
 // Animation Skills
 let skkilsSection = document.querySelector(".skills");
 let spansProgress = document.querySelectorAll(".skills .prog span");
