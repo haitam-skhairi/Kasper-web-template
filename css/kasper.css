@@ -282,11 +282,17 @@ body {
     font-size: 1.5em;
   }
 }
-.landing .fa-angle-left {
+.landing i {
+  transition: .3s;
+}
+.landing .left {
   left: 20px;
 }
-.landing .fa-angle-right {
+.landing .right {
   right: 20px;
+}
+.landing i:hover {
+  color: var(--main-color);
 }
 .landing .bullets {
   display: flex;
